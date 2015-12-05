@@ -1,3 +1,4 @@
+demo : http://colombies.com/MeteoTechnoWeb/
 
 ------ Bases de données ------------
 1 ) Créer la Bases de donnée : 'technoweb'
@@ -8,7 +9,6 @@
 	$connect_str= "mysql:host=localhost;dbname=technoweb"; 
     	$connect_user= 'root'; //valeur par défaut
     	$connect_pass= ''; //valeur par défaut
-
 
 ------ Le Fichier CSV ----------
 1 ) le fichhier .csv se nomme "meteoDonnee.csv"
@@ -25,4 +25,4 @@ Autres :
 Si les valeurs sont abérantes la requête sur le serveur ne se fera pas.
 Pour modifier le nom du fichier csv, il faut se rendre sur csv csvToBdd.php et changer "$nameFile = "meteoDonnee.csv";" 
 
-	
+Techno : PHP, AngularJS, JS, BOOTSTRAP, HTML, animate.css, CanvasJS
