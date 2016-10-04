@@ -1,5 +1,5 @@
 //Actualise juste le graphique (ne met pas a jour la BDD)
-app.controller('ChartController', function($scope, $http,$timeout) {
+app.controller('ChartController', function($scope, $http) {
 
 
      $http.get("selectChart.php")
@@ -20,16 +20,6 @@ app.controller('ChartController', function($scope, $http,$timeout) {
           });
            $scope.chart.render();
       });
-
-
-    $scope.rand = 0;
-    function update() {
-      $timeout(update, 1000);
-      $scope.rand = Math.random() * 10;
-    }
-    update();
-
-
 
     //$scope.chart.render(); //render the chart for the first time
             

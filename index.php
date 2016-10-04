@@ -10,9 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="favicon.ico"/>
-    <meta name="description" content="Météo STM32 angularjs">
+    <meta name="description" content="Météo">
     <meta name="author" content="Colombies Olivier">
-	<meta name="keywords" content="Colombies Olivier, Météo STM32, angularjs">
+	<meta name="keywords" content="Colombies Olivier">
 
     <title>Météo STM32</title>
 
@@ -67,7 +67,7 @@
     			<table class="table table-hover  animated zoomIn">
 					<thead><tr><th>Horodatage</th><th>Température</th><th>Vent</th><th>Hydrometrie</th></tr></thead>
 					<tbody>
-						<tr><td>{{donnees[0].horodatage | date:'medium'}}</td><td>{{  donnees[0].temperature }} °C</td><td>{{donnees[0].vent}} km/h</td><td>{{donnees[0].hydrometrie}} %</td></tr>
+						<tr><td>{{donnees[0].horodatage}}</td><td>{{  donnees[0].temperature }} °C</td><td>{{donnees[0].vent}} km/h</td><td>{{donnees[0].hydrometrie}} %</td></tr>
 					</tbody>
 					</tfoot></tfoot>
 				</table>
@@ -90,7 +90,7 @@
 
 	<div class="container" ng-controller="ChartController" >
 		<button type="button" id="btnChart" class="btn btn-primary" ng-click="goRefresh()">Actualiser Graphique</button>
-		  <!--<p> {{ rand}} </p>-->
+		 <!-- <p> {{ donnees}} </p> -->
 		<div class="row" >
 			<div class="col-xs-12">
 				<!-- Div affichage graphique -->
